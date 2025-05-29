@@ -2,8 +2,9 @@
 
 :root {
     /* Cores */
-    --cor-primaria: #739552;
+    --cor-primaria: #7fa856;
     --cor-secundaria: #EBECD0;
+    --cor-terciaria: #bebea9;
     /* Fontes */
     --fonte-primaria: "Poppins", sans-serif;
 }
