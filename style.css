@@ -5,6 +5,9 @@
     --cor-primaria: #7fa856;
     --cor-secundaria: #EBECD0;
     --cor-terciaria: #bebea9;
+    --cor-quarta: #8f4e49;
+    --branco: #496a8f;
+    --preto: #000;
     /* Fontes */
     --fonte-primaria: "Poppins", sans-serif;
 }
@@ -15,10 +18,11 @@ main {
     justify-content: center;
     min-height: 100dvh;
     font-family: var(--fonte-primaria);
+    color: var(--preto);
 }
 
 #tabuleiro {
-    border: 2px solid #000;
+    border: 2px solid var(--preto);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
@@ -26,6 +30,7 @@ main {
     width: 80px;
     height: 80px;
     background-color: var(--cor-primaria);
+    text-align: center;
     position: relative;
     transition: .5s ease-in-out;
 }
@@ -65,4 +70,15 @@ main {
 
 .coluna-tabuleiro:nth-child(even) .identificador-coluna {
     color: var(--cor-primaria);
+}
+
+.img-peca {
+    font-size: 38px;
+    margin: 20px 0;
+    color: var(--cor-quarta);
+    cursor: grab;
+}
+
+.peca-branca {
+    color: var(--branco);
 }
