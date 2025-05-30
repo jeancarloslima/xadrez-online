@@ -32,7 +32,6 @@ main {
     background-color: var(--cor-primaria);
     text-align: center;
     position: relative;
-    transition: .5s ease-in-out;
 }
 
 .linha-tabuleiro:nth-child(even)
@@ -70,6 +69,18 @@ main {
 
 .coluna-tabuleiro:nth-child(even) .identificador-coluna {
     color: var(--cor-primaria);
+}
+
+.casa-disponivel {
+    display: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--cor-terciaria);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .img-peca {
